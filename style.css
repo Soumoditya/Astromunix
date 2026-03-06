@@ -1,0 +1,84 @@
+body{
+background:#0b0b12;
+color:white;
+font-family:sans-serif;
+margin:0;
+}
+
+header{
+display:flex;
+justify-content:space-between;
+padding:20px;
+background:#111;
+}
+
+.hero{
+text-align:center;
+padding:80px 20px;
+}
+
+.heroButtons a{
+display:inline-block;
+margin:10px;
+padding:12px 20px;
+background:#6c3cff;
+color:white;
+text-decoration:none;
+border-radius:6px;
+}
+
+section{
+padding:40px 20px;
+}
+
+.plans{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+}
+
+.card{
+background:#161622;
+padding:20px;
+border-radius:10px;
+text-align:center;
+}
+
+.card button{
+margin-top:10px;
+padding:10px 16px;
+background:#6c3cff;
+border:none;
+color:white;
+border-radius:5px;
+}
+
+.addons{
+display:flex;
+gap:20px;
+overflow:auto;
+}
+
+.addon{
+background:#161622;
+padding:10px;
+border-radius:10px;
+cursor:pointer;
+}
+
+.addon img{
+width:150px;
+height:100px;
+object-fit:cover;
+border-radius:8px;
+}
+
+.cart{
+background:#111;
+}
+
+footer{
+text-align:center;
+padding:30px;
+background:#111;
+}
