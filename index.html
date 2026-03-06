@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Astromuni | Vedic Astrology</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h1>Astromuni</h1>
+
+<div class="currency">
+<button onclick="setCurrency('INR')">₹ INR</button>
+<button onclick="setCurrency('USD')">$ USD</button>
+</div>
+
+</header>
+
+<section class="hero">
+
+<h2>Vedic Astrology Readings</h2>
+<p>D1 • D9 • D10 • Dasha Analysis</p>
+
+<div class="heroButtons">
+<a href="#services">View Services</a>
+<a href="#customize">Customize Reading</a>
+<a href="https://reddit.com/u/creativecup2" target="_blank">Message on Reddit</a>
+</div>
+
+</section>
+
+
+<section id="services">
+
+<h2>Base Readings</h2>
+
+<div class="plans">
+
+<div class="card" data-price="108">
+<h3>Quick Planet Insight</h3>
+<p>D1 chart observation</p>
+<button onclick="addPlan(108)">Select</button>
+</div>
+
+<div class="card" data-price="251">
+<h3>Personal Reading</h3>
+<p>D1 chart + yogas + dasha</p>
+<button onclick="addPlan(251)">Select</button>
+</div>
+
+<div class="card" data-price="551">
+<h3>Detailed Chart Analysis</h3>
+<p>D1 + D9 + Mahadasha insight</p>
+<button onclick="addPlan(551)">Select</button>
+</div>
+
+<div class="card" data-price="1008">
+<h3>Sacred Chart Reading</h3>
+<p>PDF Report Included</p>
+<button onclick="addPlan(1008)">Select</button>
+</div>
+
+</div>
+
+</section>
+
+
+<section id="customize">
+
+<h2>Customize Your Reading</h2>
+
+<div class="addons">
+
+<div class="addon" onclick="addAddon('Marriage',351)">
+<img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=400">
+<p>Marriage Analysis</p>
+</div>
+
+<div class="addon" onclick="addAddon('Career',251)">
+<img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=400">
+<p>Career Analysis</p>
+</div>
+
+<div class="addon" onclick="addAddon('Finance',201)">
+<img src="https://images.unsplash.com/photo-1565514020179-026b92b84bb6?w=400">
+<p>Finance Analysis</p>
+</div>
+
+</div>
+
+</section>
+
+
+<section class="cart">
+
+<h2>Your Reading</h2>
+
+<div id="cartItems"></div>
+
+<h3 id="total">Total: ₹0</h3>
+
+<button onclick="checkout()">Proceed to Payment</button>
+
+</section>
+
+
+<section id="order">
+
+<h2>Submit Details</h2>
+
+<form id="orderForm">
+
+<input placeholder="Name" required>
+<input placeholder="Reddit Username" required>
+<input placeholder="Gender">
+
+<input type="date" required>
+<input placeholder="Birth Time">
+<input placeholder="Birth Place">
+
+<textarea placeholder="Your Question"></textarea>
+
+<button type="submit">Submit Order</button>
+
+</form>
+
+</section>
+
+
+<footer>
+
+<p>Contact</p>
+
+<a href="https://instagram.com/astroxmuni">Instagram</a>
+
+<a href="mailto:astroxmuni@gmail.com">astroxmuni@gmail.com</a>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
